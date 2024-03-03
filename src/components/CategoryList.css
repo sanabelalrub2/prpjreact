@@ -1,0 +1,34 @@
+/* في ملف الأنماط الخاص بالقائمة، مثل CategoryList.css */
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* أو space-between لتوزيع المسافات بين العناصر */
+    gap: 20px; /* يضيف مسافة بين المنتجات */
+    margin: 0 auto; /* لتوسيط القائمة */
+    padding: 10px;
+  }
+  
+  .category {
+    flex: 0 1 300px; /* يعطي كل فئة أساس 300px ولكن يسمح لها بأن تكون مرنة */
+    display: flex;
+    flex-direction: column; /* يجعل الصورة والنصوص فوق بعضها البعض */
+    align-items: center; /* محاذاة العناصر في الوسط */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* إضافة ظل خفيف للتباين */
+    padding: 15px;
+    border-radius: 8px; /* تقريب الحواف */
+  }
+  
+  .category img {
+    width: 100%; /* يجعل الصور تتمدد لتملأ العرض المتاح */
+    height: auto; /* يحافظ على نسب الصورة */
+    margin-bottom: 15px;
+  }
+  
+  .category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* يمكنك إضافة المزيد من الأنماط حسب الحاجة */
+  
