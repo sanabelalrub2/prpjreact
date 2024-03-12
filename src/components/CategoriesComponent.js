@@ -4,8 +4,6 @@ const CategoriesComponent = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    // بما أن البيانات معطاة مباشرةً، نقوم بتعيينها إلى الحالة مباشرةً
-    // في حالة جلبها من API، ستحتاج لاستخدام fetch أو axios
     const categoriesData = [
       {
         _id: "656afd2a5f24a07ecd5a5090",
@@ -37,7 +35,7 @@ const CategoriesComponent = () => {
         {categories.map((category) => (
           <div key={category.id}>
             <h3>{category.name}</h3>
-            <img src={category.image.secure_url} alt={category.name} />
+            <img src={category.image.secure_url} alt={category.name} style={{width: "100px", height: "100px"}} />
           </div>
         ))}
       </div>
@@ -45,5 +43,5 @@ const CategoriesComponent = () => {
   );
 };
 
-export default category;
-
+// تصحيح الخطأ هنا بتغيير `category` إلى `CategoriesComponent`
+export default CategoriesComponent;
